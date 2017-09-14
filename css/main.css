@@ -1,0 +1,200 @@
+/*
+*zuozhe: wangchong@sina.cn
+*for: worldpeace person website;
+*/
+
+@charset "utf-8";
+
+/**************侧边栏样式************/
+.ce-box{position: fixed;
+    top: 30%;
+    left:-100px;
+    width: 150px;
+    height: 250px;
+}
+.con{
+    position: relative;
+    width:100px;/*内容宽度*/
+    height: 250px;
+    color: #FDFFE7;
+    background: #459D72;
+}
+.con li{
+    height:50px;
+    line-height: 50px;
+    padding-left: 35px;
+    cursor: pointer;
+}
+.con li:hover{
+    color:#90D26D;
+    background: pink;
+}
+.btn{
+    position: absolute;
+    top:5%;
+    left:100px;
+    width:35px;/* 盒子右侧按钮宽度*/
+    height:35px;
+    color:#fff;
+    line-height: 35px;
+    font-size:22px;
+    text-align: center;
+    background: #90D26D;
+}
+.btn i{width:100%;}
+.tops{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    width: 35px;
+    height: 35px;
+    transition: all .28s ease-in .1s;
+    animation: st 1s linear;
+}
+.tops img{
+    width: 100%;
+}
+@keyframes st{
+    0%{
+       opacity: 0
+    }
+    100%{
+        opacity: 1; 
+    }
+}
+/******************点击星星背景色***************/
+.fc-pink{ color: pink;}    
+
+/****************随机生成的颜色块***************/
+.bg1 {background: #82c28e } 
+.bg2 {background: #df9798 }/*attr("class","bg"+随机数)*/
+.bg3 {background: #fa8466 }
+.bg4 {background: #66a3d2 }
+.bg5 {background: #77b3cd }
+.bg6 {background: #ff0 }
+.bg7 {background: #ed921f;}
+.bg8 {background: #76b4cd;}
+
+.wd33 { width:32%; float:left; margin-sec-menuright:2%; box-sizing:border-box; border: 1px solid #ddd;}
+.wd33:last-child{margin-right:0;}
+
+.wd100 { width:100%;}
+
+.wrap{ width:1000px; margin:0 auto; }
+.header{height:40px;background:#f2f2f2;border-bottom:1px solid #ddd; line-height:40px;}
+.top{ height:100px; }
+.top .logo{width:300px; float:left; padding:30px 0;}
+
+ul.menu {background: #F30}
+ul.menu > li { width:auto; float:left;height:40px; width:100px; position:relative }
+
+
+ul.menu > li a{ display:block; line-height:40px; font-size:16px;color:#fff; text-align:center}
+ul.menu > li a.act{ color:#ff0; }
+ul.menu > li > dl {position:absolute; z-index:999;}
+ul.menu > li > dl dt.act{width:100px;background:#fff; border:1px solid #F63;border-bottom:none; }
+ul.menu > li > dl dt.act a{color:#F03}
+ul.menu > li > dl dt{width:100px; position:absolute;z-index:999; top:0;}
+ul.menu > li > dl dd{display:none; position:absolute;z-index:998; top:40px;border:1px solid #F63; }
+
+ul.sec-menu {width:200px;}
+ul.sec-menu li{height:40px; background:#fff; line-height:40px; padding-left:20px;}
+ul.sec-menu li:hover{height:40px; background:#ddd;}
+
+
+
+
+.tab-wrap{ }
+.box{width:240px; height:240px; background:#FFCC33; border:4px solid #F36; padding:20px; margin:10px;}
+.tab-button{ background: #ff0;}
+.tab-button li{width:80px; height:40px; float: left; margin-right:12px; line-height: 40px; text-align: center; font-size: 14px;cursor:pointer;}
+.tab-button li.act{background: #fff; border-top:2px solid #f00;}
+.tab-content{padding:24px; }
+.tab-content ul li{line-height: 24px; font-size: 14px; }
+
+/*
+* 焦点图样式
+* 
+*/
+
+.focus-wrap{ position:relative;}
+ul.focus-button{  padding:5px; position:absolute; bottom:0; right:10px;}
+ul.focus-button li{width:20px; height:20px; display: inline-block; margin-right:12px; line-height: 40px; text-align: center; font-size: 14px; background:#ff0; text-indent:-9999px;border-radius: 50px}
+ul.focus-button li.act{background: #f00; }
+ul.focus-content {position:relative; height: 350px;}
+ul.focus-content  li{line-height: 24px; font-size: 14px; position: absolute; }
+ul.focus-content  li img{width:100%}
+	
+	
+	
+.footer{ background:#f2f2f2; height:300px; }
+.footer a{color:#9a9a9a}
+.footer a:hover{color:#cb1b1d}
+ul.footerlist{ padding:40px 20px;}
+ul.footerlist li{width:25%; float:left; padding-left:40px; border-right:1px solid #ddd; box-sizing:border-box}
+ul.footerlist li:last-child{border:none;}
+
+.weixin{ position: relative; }
+.weixinpic{  display:none; position: absolute; right:0px; top:40px; z-index:999; }
+
+.gjz { }
+.gjz a{width:60px; height:32px; line-height:32px; font-size:14px;  margin:0px 1px 1px 0; display:inline-block;  color:#fff; text-align:center; text-wrap:unrestricted; overflow:hidden}
+.gjz a:hover{ background:#fc6;}
+
+.starslt {color:#ddd}
+
+/*
+* list样式
+* 列表页样式
+*/
+
+.main-content{width:70%; float:left; margin-right:2%; min-height:600px;}
+.main-right{width:28%; float:right; position:relative; }
+.news-list li{width:50%; float:left; padding:12px; box-sizing:border-box}
+.news-list li p.pic img{width:100%;0}
+.news-list li h3{height:60px;}
+.right-float{position:relative;}
+.fixme{position:absolute; top:0;}
+.ajax-mark{}
+
+
+/*登录按钮窗口修饰*/ 
+/*markall=====即遮罩层   pop====即包裹form表单的盒子，为了调窗口居中位置*/
+.markall {position:absolute; top:0; left:0; width:100%; z-index:99998; background:rgba(0,0,0,0.5)  }
+.pop{position:fixed; z-index:99999; top:50%; left:50%; background:#FF6;  margin-left: -250px}
+
+#pop-login{width:500px; height:320px;}
+#pop-login .title{height:40px; background:#FC3; line-height:40px; font-size:16px; padding:0 20px ;}
+#pop-login .popclose{ cursor: pointer;}
+#pop-login .ipt-tit {width: 100px; display: inline-block;}
+#pop-login form p{margin:20px 0; font-size:18px; padding-left:40px;}
+.btn-ok{width:120px; padding: 12px; background: #330; border-style: none; color: #aa0; cursor:pointer;}
+.btn-ok:hover{background: #cc0;}
+.error{border:1px solid #f66; background: #c66}
+.h200{height:200px;}
+
+#pop-01{width:200px;height:200px;}
+
+
+/*右下角的返回顶部修饰*/
+
+/*<div>元素插入目标body的 内部开头处：$("<div>").prependTo("body");
+*效果：<div id="back-top"></div>
+*/
+#back-top {  
+    display: none; /*隐藏状态*/
+    position: fixed; /*固定定位*/
+    bottom: 5px;
+    right: 5px;
+    width: 64px;
+    height: 64px;
+    background-image: url('../images/totop.gif');/*插入背景图*/
+    background-repeat: no-repeat;/*不平铺*/
+    opacity: 0.4; 
+    filter: alpha(opacity=40); /* For IE8 and earlier *//*初期IE8的写法*/
+}
+#back-top:hover {
+    cursor:pointer;
+    opacity: 0.8;
+    filter: alpha(opacity=80); /* For IE8 and earlier */
+}
